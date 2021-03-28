@@ -1,0 +1,226 @@
+html, body, h1, h2, p{
+    margin: 0;
+}
+
+body {
+    background-color: #DDD;
+}
+
+header{
+    width: 100%;
+    border-bottom: 1px solid #888;
+    padding: 1rem 0;
+    position: fixed;
+    top:0;
+    background-color: #FFF;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+}
+
+header h1{
+    display: inline-block;
+    font-size: 2em;
+}
+
+header a{
+    height: 1.3em;
+}
+
+.simplelink{
+    color: #000;
+    text-decoration: none;
+    text-indent: 0;
+    display: inline-block;
+    height: 1.3em;
+    border-bottom: 2px solid transparent;
+}
+.simplelink:hover{
+    border-bottom-color: #000;
+}
+
+main{
+    margin-top: 5em;
+}
+
+.header-column{
+    width: 80%;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.header-left{
+    float:left;
+}
+
+.header-right{
+    float: right;
+    text-align: right;
+    padding: 0.8em 0 0;
+}
+
+.main-column{
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.horizontal-wrapper{
+    opacity: 0;
+    overflow-x: scroll;
+    text-align: center;
+    /* transition: opacity 2s; */
+}
+
+.horizontal-wrapper.visible{
+    opacity: 1;
+}
+
+.horizontal-wrapper::-webkit-scrollbar {
+    height: 6px;
+}
+
+.horizontal-wrapper::-webkit-scrollbar-track {
+    
+}
+
+.horizontal-wrapper::-webkit-scrollbar-thumb {
+  background-color: #998;
+  border-radius: 3px;
+}
+
+.welcome {
+    /* height: 12em; */
+    /* writing-mode: vertical-rl; */
+    text-align: start;
+    border: 1px solid #888;
+    font-family: serif;
+    font-size: 1.2rem;
+    text-indent: 1em;
+    padding: 1.2rem 1rem;
+    margin: 1.2rem auto;
+    width: 80%;
+    max-width: 40rem;
+    background-color: #FFF;
+}
+
+.welcome h2{
+    text-indent: 0;
+    text-align: center;
+}
+
+.senryu-container{
+    padding: 2.5rem 8rem 2.5rem;
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+.color-washi{
+    background-color: #EED;
+}
+
+.color-matcha{
+    background-color: #E8F0E8;
+}
+
+.senryu{
+    writing-mode: vertical-rl;
+    /* text-orientation: upright; */
+    font-size: 3.5em;
+    font-family: serif;
+    padding: 2rem 1.5rem 2rem;
+    height: 7.8em;
+    border: 1px solid #AAA;
+    box-shadow: 0.2rem 0.2rem 1.5rem 0.2rem rgba(0, 0, 0, 0.3);
+    margin: 0 3.5rem;
+    background-color: #FFF;
+    text-align: start;
+}
+
+.senryu .ind1{
+    text-indent: 0.5em;
+}
+.senryu .ind2{
+    text-indent: 1.0em;
+}
+.senryu .ind3{
+    text-indent: 1.5em;
+}
+.senryu .ind4{
+    text-indent: 2.0em;
+}
+.senryu .ind5{
+    text-indent: 2.5em;
+}
+.senryu .ind6{
+    text-indent: 3.0em;
+}
+.senryu .ind7{
+    text-indent: 3.5em;
+}
+.senryu .ind8{
+    text-indent: 4.0em;
+}
+.senryu .ind9{
+    text-indent: 4.5em;
+}
+.senryu .ind10{
+    text-indent: 5.0em;
+}
+
+.senryu .ind0p{
+    text-indent: 0.25em;
+}
+.senryu .ind1p{
+    text-indent: 0.75em;
+}
+.senryu .ind2p{
+    text-indent: 1.25em;
+}
+.senryu .ind3p{
+    text-indent: 1.75em;
+}
+.senryu .ind4p{
+    text-indent: 2.25em;
+}
+.senryu .ind5p{
+    text-indent: 2.75em;
+}
+.senryu .ind6p{
+    text-indent: 3.25em;
+}
+.senryu .ind7p{
+    text-indent: 3.75em;
+}
+.senryu .ind8p{
+    text-indent: 4.25em;
+}
+.senryu .ind9p{
+    text-indent: 4.75em;
+}
+.senryu .ind10p{
+    text-indent: 5.25em;
+}
+
+@media screen and (max-width: 768px) {
+    .header-column{
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .senryu-container{
+        padding: 2rem 3rem 2.5rem;
+    }
+
+    .senryu{
+        font-size: 2.5em;
+        padding: 2rem 1.5rem 2rem;
+        margin: 0 2.5rem;
+    }
+
+    .welcome{
+        width: auto;
+        margin: 1rem 2rem;
+    }
+}

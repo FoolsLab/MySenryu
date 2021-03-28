@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>川柳</title>
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-column">
+                <h1>Senryu</h1>
+                <nav class="header-right">
+                    <a href="https://k.foolslab.net" class="simplelink">戻る</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="horizontal-wrapper color-washi">
+                <div class="senryu-container">
+                    <div class="senryu">
+                        <p class="ind0">朝焼けの</p>
+                        <p class="ind3">空筋交いに</p>
+                        <p class="ind9">雲流れ</p>
+                    </div>
+                    <div class="senryu">
+                        <p class="ind0">雨止みの</p>
+                        <p class="ind2p">青射す明けの</p>
+                        <p class="ind6p">光かな</p>
+                    </div>
+                    <div class="senryu">
+                        <p class="ind0">斜に差す</p>
+                        <p class="ind2p">西日を覆え</p>
+                        <p class="ind9">垂れ柳</p>
+                    </div>
+                    <div class="senryu">
+                        <p class="ind0">座り込む</p>
+                        <p class="ind1">さんかく耳の</p>
+                        <p class="ind3">毛むくじゃら</p>
+                    </div>
+                    <div class="senryu">
+                        <p class="ind0">雲境</p>
+                        <p class="ind2">ビル紫に</p>
+                        <p class="ind5">染め上げて</p>
+                    </div>
+                    <div class="senryu">
+                        <p class="ind0">物音の</p>
+                        <p class="ind2p">正体つかぬ</p>
+                        <p class="ind5">ままに去る</p>
+                    </div>
+                    <div class="senryu">
+                        <p class="ind0">薄虹の</p>
+                        <p class="ind1">見ように見えぬ</p>
+                        <p class="ind9">仰角よ</p>
+                    </div>
+                    <div class="senryu">
+                        <p class="ind0">浜カラス</p>
+                        <p class="ind3p">足跡残し</p>
+                        <p class="ind9">屑突き</p>
+                    </div>
+                    <div class="senryu">
+                        <p class="ind0">街明かり</p>
+                        <p class="ind3">霞溶け落つ</p>
+                        <p class="ind9">雲の底</p>
+                    </div>
+                </div>
+            </div>
+            <div class="welcome">
+                <h2><nobr>このページは<wbr />なに？</nobr></h2>
+                <p>このページは<a href="https://k.foolslab.net" class="simplelink">きてらい</a>が縦書きWebデザインの練習と自作の川柳の蔵出しを兼ねて作ったページです。</p>
+                <p>ふんわり眺めてやってください。</p>
+                <h2></h2>
+                <div></div>
+            </div>
+            <div class="horizontal-wrapper color-matcha">
+                <div class="senryu-container">
+                    <div class="senryu">
+                        <p class="ind0">早く俺の</p>
+                        <p class="ind2p">目が見えなく</p>
+                        <p class="ind5">なる前に</p>
+                    </div>
+                    <div class="senryu">
+                        <p class="ind0p">期待して</p>
+                        <p class="ind3">知ってる町の</p>
+                        <p class="ind8">再探査</p>
+                    </div>
+                    <div class="senryu">
+                        <p class="ind0p">誰も見ぬ</p>
+                        <p class="ind2p">VSCodeの</p>
+                        <p class="ind7">模様替え</p>
+                    </div>
+                    <div class="senryu">
+                        <p class="ind0">うめき声</p>
+                        <p class="ind2">進まぬタスク</p>
+                        <p class="ind5">床に入る</p>
+                    </div>
+                    <div class="senryu">
+                        <p class="ind1p">誰だ誰だ</p>
+                        <p class="ind2p">誰だよ誰だ</p>
+                        <p class="ind3p">知らんわ</p>
+                    </div>
+                    <div class="senryu">
+                        <p class="ind0">脳内で</p>
+                        <p class="ind2">クソと神が</p>
+                        <p class="ind5">交互に踊る</p>
+                    </div>
+                    <div class="senryu">
+                        <p class="ind1">本　机</p>
+                        <p class="ind1p">ゴミ箱　布団</p>
+                        <p class="ind8">光る板</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script>
+
+            const elems = document.getElementsByClassName('horizontal-wrapper');
+            for(elem of elems){
+                const first = elem.firstElementChild.firstElementChild;
+                const firstW = first.clientWidth;
+                elem.scrollLeft = first.offsetLeft - (window.innerWidth / 2 - firstW / 2);
+                elem.classList.add('visible');
+            }
+            // const senryus = document.getElementsByClassName('senryu');
+            // for(senryu of senryus){
+            //     senryu.onclick =
+            //         (function(elem){
+            //             return function(){
+            //                 elem.scrollIntoView({
+            //                     'behavior' : 'smooth',
+            //                     'block' : 'center'
+            //                 })
+            //             }
+            //         })(senryu);
+            // }
+        </script>
+    </body>
+</html>
